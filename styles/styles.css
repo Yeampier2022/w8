@@ -1,31 +1,30 @@
 /* if you are using any Google fonts change the font names below to your fonts. 
 Any spaces in your font name should be replaced with a +. 
 Fonts are separated by a | */
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap");
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #2B2D42   ;
-  --secondary-color: #8D99AE ;
-  --accent1-color: #EDF2F4;
-  --accent2-color: #EF233C;
+  --primary-color: #2b2d42;
+  --secondary-color: #8d99ae;
+  --accent1-color: #edf2f4;
+  --accent2-color: #ef233c;
 
   /* change the values below to your chosen font(s) */
-  --heading-font: 'Montserrat', sans-serif;
-  --paragraph-font: 'Montserrat', sans-serif;
+  --heading-font: "Montserrat", sans-serif;
+  --paragraph-font: "Montserrat", sans-serif;
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #2B2D42;  /* headlines on a white background */ 
-  --headline-color-on-color: #EDF2F4; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #2B2D42; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #EDF2F4; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #2B2D42  ;
-  --nav-link-color: #2B2D42;
-  --nav-background-color: #8D99AE;
+  --headline-color-on-white: #2b2d42; /* headlines on a white background */
+  --headline-color-on-color: #edf2f4; /* headlines on a colored background */
+  --paragraph-color-on-white: #2b2d42; /* paragraph text on a white background */
+  --paragraph-color-on-color: #edf2f4; /* paragraph text on a colored background */
+  --paragraph-background-color: #2b2d42;
+  --nav-link-color: #2b2d42;
+  --nav-background-color: #8d99ae;
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #EF233C;
+  --nav-hover-background-color: #ef233c;
 }
-
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
@@ -40,9 +39,41 @@ img {
   display: block;
   margin: 0 auto;
   max-width: 350px;
+  border-radius: 40px;
+}
+
+.img-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 350px;
   border-radius: 60px;
 }
-h1, h2, h3, h4, h5, h6 {
+.laptop,
+.phone,
+.hello,
+.laptop-2,
+.lente {
+  padding: 20px;
+  height: 300;
+  width: 300px;
+}
+.cable {
+  padding: 20px;
+  height: 200;
+  width: 300px;
+}
+
+.services {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+  padding: 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--heading-font);
   color: var(--headline-color-on-white);
 }
@@ -60,7 +91,8 @@ header {
   color: var(--paragraph-color-on-color);
   background-color: var(--paragraph-background-color);
 }
-header > h1, header > h2 {
+header > h1,
+header > h2 {
   color: var(--headline-color-on-color);
 }
 
@@ -78,7 +110,7 @@ p {
 .colors th {
   background-color: #999;
 }
-.colors td{
+.colors td {
   width: 25%;
   height: 3em;
 }
@@ -92,7 +124,7 @@ p {
 .accent1 {
   background-color: var(--accent1-color);
 }
-.accent2{
+.accent2 {
   background-color: var(--accent2-color);
 }
 
@@ -107,19 +139,18 @@ nav {
   text-align: center;
   font-size: 1.2em;
 }
-nav  {
+nav {
   list-style-type: none;
   display: flex;
-
 }
 nav a {
-  padding:1em;
+  padding: 1em;
   min-width: 120px;
   text-decoration: none;
   padding: 10px;
-
 }
-nav a:link, nav a:visited {
+nav a:link,
+nav a:visited {
   color: var(--nav-link-color);
 }
 nav a:hover {
@@ -133,15 +164,14 @@ nav a:hover {
 
   grid-template-columns: repeat(6, 15%);
   grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
+  grid-template-areas:
+    ". . home home . ."
     ". . . top . ."
     ". left left right right ."
     "page2 page2 . . page3 page3";
 }
 .sitemap > div {
-
   text-align: center;
-
 }
 .sm-home {
   grid-area: home;
