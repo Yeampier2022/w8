@@ -1,27 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap");
 
 * {
-  margin: 0;
   padding: 0;
   max-width: 100%;
 }
 
 .home-title {
-  font-family: "Rock Salt", "Bradley Hand", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2em;
   margin-top: 10px;
 }
 #content {
-    width: 100%;
+  width: 100%;
   margin: 0 auto;
+  background-color: #8d99ae;
 }
 .logo {
   width: 80px;
+  border-radius: 10px;
 }
 #hero {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-top: -100px;
 }
 .home-grid {
   display: grid;
@@ -39,16 +40,16 @@
   color: #edf2f4;
 }
 .rivers-card {
-    grid-column: 2 / 4;
-    grid-row: 2 /3;
-    text-align: center;
-    margin: 200px 0;
+  grid-column: 2 / 4;
+  grid-row: 2 /3;
+  text-align: center;
+  margin: 200px 0;
 }
 .camping-card {
-    grid-column: 5 / 7;
-    grid-row: 2 /3;
-    text-align: center;
-    margin: 200px 0;
+  grid-column: 5 / 7;
+  grid-row: 2 /3;
+  text-align: center;
+  margin: 200px 0;
 }
 .rapids-card {
   grid-column: 8 / 10;
@@ -75,12 +76,11 @@
 }
 .book {
   text-decoration: none;
-  font-family: "Rock Salt", "Bradley Hand", sans-serif;
   font-size: 18px;
-  padding: 5px;
+  padding: 10px;
   margin-top: 30px;
   border-radius: 5px;
-  color: #6f7364;
+  color: #edf2f4;
 }
 main section img {
   box-sizing: border-box;
@@ -110,7 +110,7 @@ body {
 }
 header {
   width: 100%;
-  background-color: #2b2d42;
+  background-color: #8d99ae;
   display: grid;
   grid-template-columns: 150px auto;
 }
@@ -118,7 +118,7 @@ header {
   align-items: center;
 }
 nav a:hover {
-  background-color: #8d99ae;
+  background-color: #ef233c;
 }
 #logo_link {
   padding-top: 5px;
@@ -183,10 +183,9 @@ nav {
 }
 
 nav a {
-  color: #edf2f4;
+  color: #2b2d42;
   text-decoration: none;
   align-self: center;
-  padding: 15px 30px;
 }
 h1 {
   color: #edf2f4;
@@ -195,14 +194,22 @@ h2 {
   color: #edf2f4;
   margin: 0;
 }
+.mission {
+  color: black;
+  margin: 0;
+}
 h3 {
-  color: #edf2f4;
+  color: black;
 }
 h4 {
   color: #edf2f4;
   text-align: center;
   margin-top: 10px;
 }
+.sale{
+  
+}
+
 h5 {
   color: #edf2f4;
 }
