@@ -20,9 +20,16 @@
   .profile-main-container .profile-container {
     display: block;
   }
-  /* footer {
+  nav, footer {
+    flex-direction: column;
+  }
+   footer {
         margin-top: 25px;
-    } */
+    } 
+    nav a {
+        display: block;
+        padding: 15px;
+      }
 }
 @media (max-width: 400px) {
   .blogs-post-container .post-container {
